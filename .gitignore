@@ -1,0 +1,6 @@
+bin/
+include/
+lib/
+rule/
+planning_annotations.txt
+pyvenv.cfg
