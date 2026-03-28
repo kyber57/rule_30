@@ -38,7 +38,7 @@ while running:
                 save_sequence(sequence)
                 print("Bye bye...")
                 
-        screen.fill('white')
+        screen.fill('purple')
         
         inner_sequence = []
         for cell in cells:
@@ -46,10 +46,11 @@ while running:
             
             if color == COLOR_BIN_BLACK:
                 inner_sequence.append('1')
-                pygame.draw.rect(screen, color=color, rect=cell, width=0)
+                pygame.draw.rect(screen, color=COLOR_BIN_BLACK, rect=cell, width=0)
             elif color == COLOR_BIN_WHITE:
                 inner_sequence.append('0')
-                pygame.draw.rect(screen, color=color, rect=cell, width=1)
+                pygame.draw.rect(screen, color=COLOR_BIN_WHITE, rect=cell, width=1)
+                # pygame.draw.rect(screen, color=COLOR_BIN_BLACK, rect=cell, width=1)
 
         print("Game is going on...")
         print("/n/n")
